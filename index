@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickFix Mobile Repair — Fast, Mobile, Trusted</title>
+  <meta name="description" content="QuickFix: mobile phone repairs that come to you. Cracked screens, battery swaps, water damage — same day. Call/WhatsApp +254 104543380 or email charmclassic30@gmail.com" />
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    /* Minimal, single-file ad landing CSS — keep it sharp and mobile-first */
+    :root{--bg:#0b1220;--card:#0f1724;--muted:#9db0c7;--accent:#6ee7b7;--accent2:#90cdf4;--white:#eaf2ff}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%,#0b1220 100%);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--white)}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{font-weight:800;font-size:20px;letter-spacing:0.6px}
+    .tag{font-size:13px;color:var(--muted)}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0}
+    .hero-inner{display:flex;flex-direction:column;gap:14px}
+    h1{font-size:36px;margin:0;line-height:1.03}
+    p.lead{margin:0;color:var(--muted);max-width:60ch}
+    .kpi{display:flex;gap:12px;align-items:center}
+    .k{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#071021;padding:8px 12px;border-radius:999px;font-weight:700}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:12px;border:none;cursor:pointer;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#04142a}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.06));padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.04)}
+    .grid{display:grid;grid-template-columns:1fr 420px;gap:18px;align-items:start}
+
+    form label{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+    input,textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--white);margin-top:6px}
+    textarea{resize:vertical}
+    .muted{color:var(--muted);font-size:13px}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .feature{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+
+    footer{margin-top:28px;padding:18px 0;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+
+    @media (max-width:1000px){.grid{grid-template-columns:1fr}.hero{padding:8px 0}h1{font-size:28px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="brand">QuickFix</div>
+        <div class="tag">Mobile phone repair — we come to you</div>
+      </div>
+      <div class="kpi">
+        <div class="k">Same-day</div>
+        <div class="muted">Trusted techs • 6-month parts warranty</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Cracked screen? Battery dying? We fix phones where you are — fast.</h1>
+          <p class="lead">QuickFix sends a certified tech to your home, office, or campus. Transparent prices, OEM-quality parts, and real warranty. No long queues. No sketchy shops.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" id="bookBtn">Get a free quote</button>
+            <a class="btn btn-ghost" href="https://wa.me/254104543380" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+254104543380">Call +254 104543380</a>
+          </div>
+          <div class="features">
+            <div class="feature">
+              <strong>Screen replacements</strong>
+              <div class="muted">Genuine or premium compatible. 6-month warranty.</div>
+            </div>
+            <div class="feature">
+              <strong>Battery swaps</strong>
+              <div class="muted">New battery, full health checks, 6-month warranty.</div>
+            </div>
+            <div class="feature">
+              <strong>Fast diagnostics</strong>
+              <div class="muted">We usually finish simple repairs within 1 hour.</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Quick quote — no signup</h3>
+          <form id="leadForm">
+            <label>Name<input type="text" name="name" required placeholder="Your full name"></label>
+            <label>Email<input type="email" name="email" required placeholder="you@domain.com"></label>
+            <label>Phone<input type="tel" name="phone" placeholder="+254..." value="+254104543380"></label>
+            <label>Service
+              <select name="service">
+                <option>Screen repair</option>
+                <option>Battery replacement</option>
+                <option>Charging port</option>
+                <option>Water damage</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Short details<textarea name="message" rows="4" required placeholder="e.g., iPhone 12 screen cracked, happened yesterday"></textarea></label>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn btn-primary" type="submit">Send via Email</button>
+              <button type="button" class="btn btn-ghost" id="waQuick">Send on WhatsApp</button>
+            </div>
+            <p class="muted" style="margin-top:10px;font-size:12px">Messages go to <strong>charmclassic30@gmail.com</strong>. Reply usually under 10 minutes during business hours.</p>
+          </form>
+        </aside>
+      </section>
+
+      <section style="margin-top:18px">
+        <div class="card">
+          <h3 style="margin:0 0 8px">Why choose QuickFix?</h3>
+          <ul class="muted">
+            <li>Mobile — we come to your location (home/office/campus).</li>
+            <li>Transparent pricing — know the cost before we start.</li>
+            <li>Trusted parts & techs — 6-month warranty on parts.</li>
+          </ul>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+          <div class="card" style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 6px">Pricing (typical)</h4>
+            <div class="muted">Screen repair — from KES 4,000<br>Battery swap — from KES 3,000<br>Charging port — from KES 2,500</div>
+          </div>
+
+          <div class="card" style="flex:1;min-width:220px">
+            <h4 style="margin:0 0 6px">Real testimonials</h4>
+            <div class="muted">“Pulled up in 30 mins. Phone looks brand new.” — Brian M.<br>“Repaired my flooded phone. Saved my data.” — Carol K.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="muted">© <span id="yr"></span> QuickFix — charmclassic30@gmail.com</div>
+      <div>
+        <a href="https://wa.me/254104543380" target="_blank" rel="noopener" class="muted">WhatsApp</a>
+        &nbsp;•&nbsp;
+        <a href="tel:+254104543380" class="muted">Call</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Minimal client-side logic: open mailto prefilled or WhatsApp share
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const leadForm = document.getElementById('leadForm');
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(leadForm);
+      const name = fd.get('name') || 'No name';
+      const email = fd.get('email') || '';
+      const phone = fd.get('phone') || '+254104543380';
+      const service = fd.get('service') || 'General Inquiry';
+      const message = fd.get('message') || '';
+
+      // Construct mailto link — opens user's email app to send to charmclassic30@gmail.com
+      const subject = encodeURIComponent(`QuickFix lead — ${service} — ${name}`);
+      const body = encodeURIComponent(`Time: ${new Date().toISOString()}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\n\nMessage:\n${message}`);
+      const mailto = `mailto:charmclassic30@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailto;
+    });
+
+    document.getElementById('waQuick').addEventListener('click', () => {
+      const fd = new FormData(leadForm);
+      const name = fd.get('name') || 'No name';
+      const phone = fd.get('phone') || '+254104543380';
+      const service = fd.get('service') || 'General Inquiry';
+      const message = fd.get('message') || '';
+      const text = `New lead from website%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(message)}`;
+      // Open WhatsApp chat with prefilled message (opens WhatsApp or WhatsApp Web)
+      window.open(`https://wa.me/254104543380?text=${text}`, '_blank');
+    });
+
+    // Scroll to form when user clicks main CTA
+    document.getElementById('bookBtn').addEventListener('click', () => {
+      document.getElementById('leadForm').scrollIntoView({behavior:'smooth', block:'center'});
+    });
+  </script>
+</body>
+</html>
